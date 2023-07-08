@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/-Filterable-Cards-.css">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Cards-v2.css">
+    <link rel="stylesheet" href="assets/css/Different-Styled---Cards-1.css">
+    <link rel="stylesheet" href="assets/css/Different-Styled---Cards.css">
+    <link rel="stylesheet" href="assets/css/featured-products-slider-1.css">
+    <link rel="stylesheet" href="assets/css/featured-products-slider.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/News-Cards.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-1.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
+</head>
+
+<body>
+    
+</body>
+    <div th:replace="/base :: navbar"></div>
+    <section class="py-5">
+        <div class="container" style="margin: 0px;padding: 72px;height: 143px;">
+            <h1 class="text-center mb-4" style="color: rgb(13,13,12);width: 1500px;height: 74px;">&nbsp;<a
+                    href="https://en.wikipedia.org/wiki/Disease"><span
+                        style="text-decoration: underline;"> Blogs</span></a><br><br></h1>
+            <div>
+                <ul class="list-group list-group-horizontal">
+                    <a th:href="@{/disease}">
+                        <li class="list-group-item">blogs</li>
+                    </a>
+                    
+                </ul>
+            </div>
+        </div><br><br><br><br><br>
+		<center><a   th:href="@{/blog/add}"><button type="button" class="btn btn-primary btn-lg">Add your blogs </button></a></center>
+        <div style="color: black">
+            <div class="container" >
+                <div class="row" th:each="disease : ${disease}">
+                    <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                        <div class="intro">
+                            <h1 class="text-center" style="background-color:rgb(243, 234, 234)" th:text="${disease.name}"></h1>
+                            <p class="text-center"> </p><img class="img-fluid1" height="250px" width="300px"
+                                th:src="@{${'/productImages/' + disease.imageName}}" th:alt="${disease.name}">
+                        
+                        <div class="article-clean">
+                            <p th:text="${disease.description} "></p>
+
+
+                        </div>
+						<div> <a href="https://en.wikipedia.org/wiki/Pet.com"><button >more</button></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main id="site-content" class="site-content" role="main">
+			<div class="banner banner--single bg-green"></div>
+			<div class="container d-flex justify-content-between into-banner-article">
+				<div class="content p-relative">
+					<svg class="single-content-left-svg p-absolute" width="99" height="231" style="color: #64B494">
+						<use
+							xlink:href="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/critical-collection.svg?v=1.4.8.6#article-objects-left">
+						</use>
+					</svg> <svg class="single-content-right-svg p-absolute" width="432" height="228"
+						style="color: #64B494">
+						<use
+							xlink:href="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/critical-collection.svg?v=1.4.8.6#article-objects-right">
+						</use>
+					</svg>
+					<p class="disclaimer text-center xs-mb-15">
+						Pet Keen is reader-supported. When you buy via links on our site, we may earn an affiliate
+						commission at no cost to you. <a href="/affiliate-disclaimer/" class="text-white"
+							target="_blank" data-wpel-link="internal">Learn more</a>. </p>
+					<article id="post-5569"
+						class="bg-white p-relative z-index-2 post-5569 post type-post status-publish format-standard has-post-thumbnail category-general">
+						<header class="entry-header">
+							<h1 class="entry-title">Top 25 Pet Blogs for Animal Lovers in 2023</h1>
+							<div class="post-meta text-light-gray text-regular d-flex align-items-center xs-mb-15">
+								<div class="by-line d-flex align-items-center">
+									<span>By</span>
+									<picture class="br-100 w-30-px h-30-px skip-lazyloading sp-no-webp">
+										<source
+											srcset="https://petkeen.com/wp-content/uploads/2022/03/e3b864ff2b2a7905603a716c4f060acf-30x30.webp"
+											type="image/webp">
+										<source
+											srcset="https://petkeen.com/wp-content/uploads/2022/03/e3b864ff2b2a7905603a716c4f060acf-30x30.png"
+											type="image/png"><img
+											src="https://petkeen.com/wp-content/uploads/2022/03/e3b864ff2b2a7905603a716c4f060acf-30x30.png"
+											class="br-100 w-30-px h-30-px skip-lazyloading sp-no-webp"
+											alt="Nicole Cosgrove Profile Picture"
+											srcset="https://petkeen.com/wp-content/uploads/2022/03/e3b864ff2b2a7905603a716c4f060acf-30x30.png">
+									</picture>
+									<a href="https://petkeen.com/author/nicole-cosgrove/" target="_blank"
+										class="profile-name text-underline" data-wpel-link="internal">Nicole
+										Cosgrove</a>
+								</div>
+								<div class="date-line d-flex align-items-center">
+									<span class="xs-pr-5">Last updated:</span>
+									<time itemprop="dateModified" class="entry-date updated"
+										datetime="2023-03-12T12:15:43+00:00"><span>Mar</span> <span>12</span>
+										<span>2023</span></time>
+								</div>
+							</div>
+						</header>
+						<div class="entry-content">
+							<figure class="post-feature-img xs-mb-15">
+								<picture class="p-centered skip-lazyloading sp-no-webp" decoding="async">
+									<source
+										srcset="https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-760x720.webp 760w,https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-350x332.webp 350w,https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-300x284.webp 300w,https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-768x728.webp 768w,https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs.webp 1000w"
+										sizes="(max-width: 760px) 40vw, 760px" type="image/webp">
+									<source
+										srcset="https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-760x720.jpg 760w, https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-350x332.jpg 350w, https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-300x284.jpg 300w, https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-768x728.jpg 768w, https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs.jpg 1000w"
+										sizes="(max-width: 760px) 40vw, 760px" type="image/jpeg"><img
+										src="https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-760x720.jpg"
+										class="p-centered skip-lazyloading sp-no-webp" decoding="async"
+										alt="top pet blogs" height="720" width="760"
+										srcset="https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-760x720.jpg 760w, https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-350x332.jpg 350w, https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-300x284.jpg 300w, https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs-768x728.jpg 768w, https://petkeen.com/wp-content/uploads/2020/07/top-pet-blogs.jpg 1000w"
+										sizes="(max-width: 760px) 40vw, 760px">
+								</picture>
+							</figure>
+							<p>Even the most seasoned pet owners could use a tip now and then. That’s where we come in!
+								To help you find the best pet advice, funny videos, and cute pictures, we’ve put
+								together this list of the top 25 pet blogs of this year. Whether you have a <a
+									href="https://petkeen.com/goldfish-names/" target="_blank" rel="noopener noreferrer"
+									data-wpel-link="internal">goldfish</a>, parrot, or Siamese cat, these great blogs
+								can offer you advice, support, or just a good laugh.</p>
+							<p>
+								<picture style="" decoding="async"
+									class="aligncenter size-full wp-image-4625 sp-no-webp">
+									<source class="lazy-load-source lazy-hidden"
+										data-load-srcset="https://petkeen.com/wp-content/uploads/2020/07/pets-2-1.webp 505w,https://petkeen.com/wp-content/uploads/2020/07/pets-2-1-300x71.webp 300w"
+										data-load-sizes="(max-width: 505px) 100vw, 505px" type="image/webp">
+									<source class="lazy-load-source lazy-hidden"
+										data-load-srcset="https://petkeen.com/wp-content/uploads/2020/07/pets-2-1.png 505w, https://petkeen.com/wp-content/uploads/2020/07/pets-2-1-300x71.png 300w"
+										data-load-sizes="(max-width: 505px) 100vw, 505px" type="image/png"><img
+										src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+										data-load-type="image"
+										data-load-src="https://petkeen.com/wp-content/uploads/2020/07/pets-2-1.png"
+										style="aspect-ratio: 101/24" decoding="async"
+										class="lazy-load-image lazy-hidden aligncenter size-full wp-image-4625 sp-no-webp"
+										alt="divider-multiprint" height="120" width="505"
+										data-load-srcset="https://petkeen.com/wp-content/uploads/2020/07/pets-2-1.png 505w, https://petkeen.com/wp-content/uploads/2020/07/pets-2-1-300x71.png 300w"
+										data-load-sizes="(max-width: 505px) 100vw, 505px">
+								</picture>
+							</p>
+							<div th:replace="footer :: footer"></div>
+			</section>
+			
+					<div class="opportunity__inner w-100 h-100">
+						<style>
+							.elementor-116684 .elementor-element.elementor-element-5669f814 {
+								padding: 0px 0px 0px 0px;
+							}
+
+							.elementor-116684 .elementor-element.elementor-element-e398042>.elementor-element-populated {
+								transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+								margin: 0px 0px 0px 0px;
+								--e-column-margin-right: 0px;
+								--e-column-margin-left: 0px;
+								padding: 0px 0px 0px 0px;
+							}
+
+							.elementor-116684 .elementor-element.elementor-element-e398042>.elementor-element-populated>.elementor-background-overlay {
+								transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+							}
+
+							.elementor-116684 .elementor-element.elementor-element-49a7651c>.elementor-widget-container {
+								border-radius: 0px 0px 0px 0px;
+							}
+						</style>
+						<div data-elementor-type="wp-post" data-elementor-id="116684"
+							class="elementor elementor-116684">
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-5669f814 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="5669f814" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e398042"
+										data-id="e398042" data-element_type="column"
+										data-settings='{"background_background":"classic"}'>
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-49a7651c elementor-widget elementor-widget-image"
+												data-id="49a7651c" data-element_type="widget"
+												data-widget_type="image.default">
+												<div class="elementor-widget-container">
+													<a href="https://petkeen.com/chewy-opportunity/" target="_blank"
+														rel="nofollow" data-wpel-link="internal">
+														<picture style="" decoding="async"
+															class="attachment-full size-full wp-image-134092 sp-no-webp">
+															<source class="lazy-load-source lazy-hidden"
+																data-load-srcset="https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL.webp 2048w,https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-300x261.webp 300w,https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-1024x892.webp 1024w,https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-768x669.webp 768w,https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-1536x1337.webp 1536w,https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-760x662.webp 760w,https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-350x305.webp 350w"
+																data-load-sizes="(max-width: 2048px) 100vw, 2048px"
+																type="image/webp">
+															<source class="lazy-load-source lazy-hidden"
+																data-load-srcset="https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL.jpg 2048w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-300x261.jpg 300w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-1024x892.jpg 1024w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-768x669.jpg 768w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-1536x1337.jpg 1536w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-760x662.jpg 760w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-350x305.jpg 350w"
+																data-load-sizes="(max-width: 2048px) 100vw, 2048px"
+																type="image/jpeg"><img
+																src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+																data-load-type="image"
+																data-load-src="https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL.jpg"
+																style="aspect-ratio: 2048/1783" decoding="async"
+																class="lazy-load-image lazy-hidden attachment-full size-full wp-image-134092 sp-no-webp"
+																alt="CHEWY 35 PET KEEN GENERAL" height="1783"
+																width="2048"
+																data-load-srcset="https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL.jpg 2048w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-300x261.jpg 300w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-1024x892.jpg 1024w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-768x669.jpg 768w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-1536x1337.jpg 1536w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-760x662.jpg 760w, https://petkeen.com/wp-content/uploads/2022/02/CHEWY-35-PET-KEEN-GENERAL-350x305.jpg 350w"
+																data-load-sizes="(max-width: 2048px) 100vw, 2048px">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer id="site-footer" class="content-visibility-auto site-footer bg-dark-slate-blue" role="contentinfo">
+			<div class="container">
+				<div class="md-break-w d-flex flex-wrap xs-pt-30 xs-pb-30">
+					<div class="w-50 xs-pr-30">
+						<div id="site-footer-branding">
+							<a href="https://petkeen.com/" class="skip-lazyloading custom-logo-link" rel="home"
+								data-wpel-link="internal"><img width="178" height="54"
+									src="https://petkeen.com/wp-content/uploads/2022/02/pk-logo-white.svg"
+									class="skip-lazyloading custom-logo" alt="Pet Keen" decoding="async"></a>
+						</div>
+						<p class="text-white wrapper-sm xs-mt-10 xs-mb-30">Our mission at Pet Keen is to make the life
+							of you and your pets easier and even more enjoyable.</p>
+						<div id="footer-navigation" class="xs-mt-20">
+							<div class="wrapper-sm">
+								<ul id="footer-menu"
+									class="menu-with-underlines menu-two-cols d-flex flex-wrap flex-row list-none xs-p-0">
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113287">
+										<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+											href="https://petkeen.com/about-us/" data-wpel-link="internal">About Us</a>
+									</li>
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113291">
+										<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+											href="https://petkeen.com/submit-your-pet/" data-wpel-link="internal">Submit
+											your pet</a></li>
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113289">
+										<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+											href="https://petkeen.com/contact-us/" data-wpel-link="internal">Contact
+											Us</a></li>
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-113290">
+										<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+											rel="privacy-policy" href="https://petkeen.com/privacy-policy/"
+											data-wpel-link="internal">Privacy Policy</a></li>
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113292">
+										<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+											href="https://petkeen.com/terms-of-use/" data-wpel-link="internal">Terms of
+											use</a></li>
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113293">
+										<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+											href="https://petkeen.com/affiliate-disclaimer-review-policy/"
+											data-wpel-link="internal">Affiliate Disclaimer</a></li>
+								</ul>
+							</div>
+						</div>
+						<p class="text-regular text-white text-bold md-mt-30 md-pt-30">Let’s be friends!</p>
+						<div id="footer-socials" class="d-flex xs-mt-10 xs-mb-20 md-mb-0">
+							<a href="https://www.facebook.com/PetKeen/" class="xs-mr-10" target="_blank"
+								data-wpel-link="external" rel="nofollow">
+								<svg width="33" height="33"
+									data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#fb">
+									<use xlink:href="http://www.w3.org/1999/xlink"></use>
+								</svg> </a>
+							<a href="https://www.instagram.com/petkeenofficial/" class="xs-mr-10" target="_blank"
+								data-wpel-link="external" rel="nofollow">
+								<svg width="33" height="33"
+									data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#insta">
+									<use xlink:href="http://www.w3.org/1999/xlink"></use>
+								</svg> </a>
+							<a href="https://twitter.com/PetKeenOfficial" class="xs-mr-10" target="_blank"
+								data-wpel-link="external" rel="nofollow">
+								<svg width="33" height="33"
+									data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#twit">
+									<use xlink:href="http://www.w3.org/1999/xlink"></use>
+								</svg> </a>
+							<a href="https://www.tiktok.com/@petkeendaily" class="xs-mr-10" target="_blank"
+								data-wpel-link="external" rel="nofollow">
+								<svg width="33" height="33"
+									data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#tiktok">
+									<use xlink:href="http://www.w3.org/1999/xlink"></use>
+								</svg> </a>
+						</div>
+					</div>
+					<div class="w-50">
+						<p class="text-bold text-medium text-white xs-mt-20">Discover</p>
+						<div id="footer-categories" class="xs-mt-20">
+							<ul id="footer-menu"
+								class="menu-with-underlines menu-three-cols d-flex flex-wrap flex-row list-none xs-p-0">
+								<li id="menu-item-113268"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113268"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/dogs/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#dog">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Dogs</a></li>
+								<li id="menu-item-113269"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113269"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/cats/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#cat">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Cats</a></li>
+								<li id="menu-item-113270"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113270"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/fish/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#fish">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Fish</a></li>
+								<li id="menu-item-113271"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113271"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/horses/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#horse">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Horses</a></li>
+								<li id="menu-item-113272"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113272"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="#"><svg width="27" height="27" style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#rabbit">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Small Pets</a></li>
+								<li id="menu-item-113273"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113273"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/birds/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#bird">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Birds</a></li>
+								<li id="menu-item-113274"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113274"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/rabbits/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#rabbit">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Rabbits</a></li>
+								<li id="menu-item-113275"
+									class="hamsters menu-item menu-item-type-custom menu-item-object-custom menu-item-113275">
+									<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/hamsters/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#hamster">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Hamsters</a></li>
+								<li id="menu-item-113276"
+									class="guinea-pigs menu-item menu-item-type-custom menu-item-object-custom menu-item-113276">
+									<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/guinea-pigs/" data-wpel-link="internal"><svg width="27"
+											height="27" style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#guinea-pig">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Guinea Pigs</a></li>
+								<li id="menu-item-113277"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113277"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/gerbils/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#gerbil">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Gerbils</a></li>
+								<li id="menu-item-113278"
+									class="ferrets menu-item menu-item-type-custom menu-item-object-custom menu-item-113278">
+									<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/ferrets/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#ferret">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Ferrets</a></li>
+								<li id="menu-item-113279"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113279"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/hedgehogs/" data-wpel-link="internal"><svg width="27"
+											height="27" style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#hedgehog">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Hedgehogs</a></li>
+								<li id="menu-item-113280"
+									class="pet-rats menu-item menu-item-type-custom menu-item-object-custom menu-item-113280">
+									<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/pet-rats/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#rat">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Pet Rats</a></li>
+								<li id="menu-item-113281"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113281"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/reptiles/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#snake">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Reptiles</a></li>
+								<li id="menu-item-113282"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113282"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/turtles/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#turtle">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Turtles</a></li>
+								<li id="menu-item-113283"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113283"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/snakes/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#snake">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Snakes</a></li>
+								<li id="menu-item-113284"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113284"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/geckos/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#gecko">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Geckos</a></li>
+								<li id="menu-item-113285"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113285"><a
+										class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/bearded-dragons/" data-wpel-link="internal"><svg width="27"
+											height="27" style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#bearded-dragon">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Bearded dragons</a></li>
+								<li id="menu-item-113286"
+									class="frogs menu-item menu-item-type-custom menu-item-object-custom menu-item-113286">
+									<a class="menu-item-anchor d-flex align-items-center text-white text-d-none text-bold"
+										href="/category/frogs/" data-wpel-link="internal"><svg width="27" height="27"
+											style="color: #64b494"
+											data-lazy="https://petkeen.com/wp-content/themes/petkeen/build/core/svg/lazy-collection.svg?v=1.4.8.6#frog">
+											<use xlink:href="http://www.w3.org/1999/xlink"></use>
+										</svg> Frogs</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-darker-slate-blue xs-pt-30 xs-pb-30">
+				<div class="container">
+					<div class="wrapper-lg">
+						<p class="text-small text-white xs-mb-30">PetKeen.com does not intend to provide veterinary
+							advice. While we provide information resources and canine education, the content here is not
+							a substitute for veterinary guidance.</p>
+						<p class="text-small text-white">© 2023 Pet Keen • All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="assets/js/-Filterable-Cards-.js"></script>
+        <script src="assets/js/agency.js"></script>
+        <script src="assets/js/featured-products-slider.js"></script>
+        <script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js"></script>
+</body>
+
+</html>

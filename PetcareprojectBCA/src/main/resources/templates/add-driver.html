@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body>
+    
+        <h1>Enter workers Details</h1>
+    
+        <form action="/add-driver" method="post"><input type="hidden" name="_csrf" value="0d2bc488-7c9f-41b8-b329-4ac0335f0294">
+    
+            <fieldset class="mb-3">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required="required" value="">
+                
+            </fieldset>
+    
+            <fieldset class="mb-3">
+                <label for="assignedCarId">Assign serviece id:</label>
+                <input type="text" id="assignedCarId" name="assignedCarId" required="required" value="">
+                
+            </fieldset>
+    
+            <input type="submit" class="btn btn-success">
+    
+        </form>
+
+</html>

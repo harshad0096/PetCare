@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Enter Driver Details</h1>
+
+    <form th:action="@{/add-driver}" th:object="${driver}" method="post">
+
+        <fieldset class="mb-3">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" th:required="required" th:field="*{username}"/>
+            <div th:if="${#fields.hasErrors('username')}" class="text-warning" th:errors="*{username}"></div>
+        </fieldset>
+
+        <fieldset class="mb-3">
+            <label for="assignedCarId">Assign serviece id:</label>
+            <input type="text" id="assignedCarId" name="assignedCarId" th:required="required" th:field="*{assignedCarId}"/>
+            <div th:if="${#fields.hasErrors('assignedCarId')}" class="text-warning" th:errors="*{assignedCarId}"></div>
+        </fieldset>
+
+        <input type="submit" class="btn btn-success"/>
+
+    </form>
+</body>
+</html>

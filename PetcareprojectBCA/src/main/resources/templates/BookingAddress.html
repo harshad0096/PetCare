@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Address Form</title>
+</head>
+<body>
+    <h2>Add Address</h2>
+    <form method="POST" action="/address">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br><br>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br><br>
+        
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Get Addresses by User ID</h2>
+    <form method="GET" action="/api/address/{userId}">
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId" required><br><br>
+        
+        <input type="submit" value="Get Addresses">
+    </form>
+</body>
+</html>

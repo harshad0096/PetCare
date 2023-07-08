@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"th:replace="adminnav::layout(~{::div})">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>List of servies</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>RequestId</th>
+                    <th>DriverId</th>
+                    <th>CarId</th>
+                    <th>Request Status</th>
+                    <th>Approve</th>
+                    <th>Reject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="cr : ${car_requests}">
+                    <td th:text="${cr.id}"></td>
+                    <td th:text="${cr.driverId}"></td>
+                    <td th:text="${cr.carId}"></td>
+                    <td th:text="${cr.requestStatus}"></td>
+                    <td>
+                        <a th:href="@{/approve-request(requestId=${cr.id},driverId=${cr.driverId},carId=${cr.carId})}" class="btn btn-warning">Approve</a>
+                    </td>
+                    <td>
+                        <a th:href="@{/reject-request(requestId=${cr.id})}" class="btn btn-warning">Reject</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

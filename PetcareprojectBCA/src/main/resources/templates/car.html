@@ -1,0 +1,38 @@
+<!-- car.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add service</title>
+</head>
+<body>
+    <h1>Add service</h1>
+    <form th:action="@{/add-car}" th:object="${car}" method="post">
+
+        <fieldset class="mb-3">
+            <label for="model">date</label>
+            <input type="text" id="model" name="model" th:required="required" th:field="*{model}"/>
+            <div th:if="${#fields.hasErrors('model')}" class="text-warning" th:errors="*{model}"></div>
+        </fieldset>
+
+        <fieldset class="mb-3">
+            <label for="color">service name</label>
+            <input type="text" id="color" name="color" th:required="required" th:field="*{color}"/>
+            <div th:if="${#fields.hasErrors('color')}" class="text-warning" th:errors="*{color}"></div>
+        </fieldset>
+
+        <fieldset class="mb-3">
+            <label for="seatingCapacity">service id</label>
+            <input type="text" id="seatingCapacity" name="seatingCapacity" th:required="required" th:field="*{seatingCapacity}"/>
+            <div th:if="${#fields.hasErrors('seatingCapacity')}" class="text-warning" th:errors="*{seatingCapacity}"></div>
+        </fieldset>
+
+        <input type="submit" class="btn btn-success"/>
+
+    </form>
+
+    <h1>service id 3 salun servise</h1>
+    <h1>service id 7 for Grooming</h1>
+    <h1>service id 4 for medical servise </h1>
+</body>
+</html>

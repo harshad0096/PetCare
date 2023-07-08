@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="assets/css/Roboto.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-DataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/Profile-Edit-Form-1.css">
+    <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
+    <link rel="stylesheet" href="assets/css/Shopping-Grid.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search-1.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search.css">
+</head>
+
+<body id="page-top">
+    <div th:replace="/base :: navbar"></div><br><br><br> <br>
+    <header class="masthead" style="background-image: url(&quot;assets/img/LOGIN%20PET.jpg&quot;);background-color: rgba(255,255,255,0.95);background-position: top;opacity: 1;">
+        <div class="container profile profile-view" id="profile">
+            <div class="row">
+                <div class="col-md-12 alert-col relative">
+                </div>
+            </div>
+            <form th:object="${user}" th:action="@{/user/profile/update}" method="post">
+                <!--<div class="form-row profile-row">
+                <div class="col-md-4 relative">
+                <div class="avatar">
+                <div class="avatar-bg center" style="width: 206px;height: 205px;margin: 4px;padding: 76px;"></div>
+                </div><input type="file" class="form-control" name="avatar-file"></div>
+                <div class="col-md-8">-->
+                <h1>Profile </h1>
+                <hr>
+                <div class="form-row">
+                    <div class="col-sm-12 col-md-6">
+                        <h3 style="color: black" for="username">User name</h3>
+                        <div class="form-group" >
+                            <input type="text" id="username" name="username" th:value="${user.username}" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h3 style="color: black">User Phone no</h3>
+                        <div class="form-group">
+                            <input type="text" id="phoneno" name="phoneno" th:value="${user.phoneno}" required>
+                        </div>
+                    </div>
+                </div>
+                <h3 style="color: black">User Email</h3>
+                <div class="form-group">
+                    <input type="text" id="email" name="email" th:value="${user.email}" required>
+                </div>
+                <hr>
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+    </header>
+
+    <section>
+    </div>
+    <center>
+        <a href="#" th:href="@{/userorder}" class="btn btn-primary">View orders</a>
+    </center><br><br><br>
+    <!--<center>
+        <a href="#" th:href="@{/bookingview}" class="btn btn-primary">View Booking</a>
+    </center>
+    -->
+    </section>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

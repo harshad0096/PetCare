@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"th:replace="adminnav::layout(~{::div})">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body id="page-top"  style="background-color: rgb(13,32,41);background-image: url(&quot;assets/img/pet1.jpg&quot;);">
+
+    <div style="background-color: rgb(13,32,41);background-image: url(&quot;assets/img/pet1.jpg&quot;);"><br><br><br><br></div>
+<div style="background-color: rgb(13,32,41);background-image: url(&quot;assets/img/pet1.jpg&quot;);">
+<a class="dropdown-item"href="#"  th:href="@{/admin}">back</a>
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome back, Admin</h1>
+    <p>Easily manage your data from this admin <mark></mark></p>
+</div>
+
+</div>
+<div>
+ 
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <a th:href="@{/admin/categories/add}"><button type="button" class="btn btn-primary btn-lg">Add product categories</button></a>
+      </div>
+      <div class="col-sm">
+        <a th:href="@{/admin/products/add}">  <button type="button" class="btn btn-primary btn-lg">Add products</button></a>
+      </div>
+      <div class="col-sm">
+        <a   th:href="@{/admin/products}"><button type="button" class="btn btn-primary btn-lg">View products</button></a>
+      </div>
+    </div>
+  </div><br><br><br><br>
+    <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <a th:href="@{/admin/animalcategories/add}"> <button type="button" class="btn btn-primary btn-lg">Add blogs categories</button></a>
+
+      </div>
+      <div class="col-sm">
+        <a   th:href="@{/blog/add}"><button type="button" class="btn btn-primary btn-lg">Add blogs</button></a>
+      </div>
+      <div class="col-sm">
+        <a th:href="@{/admin/viewcontact}"><button type="button" class="btn btn-primary btn-lg">See user msg</button></a>
+      </div>
+    </div>
+  </div><br><br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <a th:href="@{/adminorder}"><button type="button" class="btn btn-primary btn-lg">See Oders</button></a>
+      </div>
+      <div class="col-sm">
+        <li class="nav-item"><a class="nav-link" href="/list-cars"><b> Add service</b></a></li>
+      </div>
+      <div class="col-sm">
+        <li class="nav-item"><a class="nav-link" href="/list-drivers"><b>Add service worker</b></a></li>
+      </div>
+    </div>
+  </div>
+<br><br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+      <!--  <li class="nav-item"><a class="nav-link" href="/list-car-requests"><b>service Requests</b></a></li>
+      </div>
+      <div class="col-sm">
+        <li class="nav-item"><a class="nav-link" href="/delete-car-requests"><b>Bookings</b></a></li>
+      </div>-->
+      <div class="col-sm">
+        <a th:href="@{/Allusers}"><button type="button" class="btn btn-primary btn-lg">All Users</button></a>
+      </div>
+    </div>
+  </div><br><br><br><br><br>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

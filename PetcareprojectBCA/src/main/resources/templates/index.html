@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>pet care</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/-Filterable-Cards-.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Cards-v2.css">
+    <link rel="stylesheet" href="assets/css/Different-Styled---Cards-1.css">
+    <link rel="stylesheet" href="assets/css/Different-Styled---Cards.css">
+    <link rel="stylesheet" href="assets/css/featured-products-slider-1.css">
+    <link rel="stylesheet" href="assets/css/featured-products-slider.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/News-Cards.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-1.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
+
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav"
+    style="width: 100%;height: 100px;background-color: rgba(12,13,13,0.99);">
+    <div class="container"><a class="navbar-brand" href="#page-top"
+            style="color: rgb(250,249,248);font-family: Montserrat, sans-serif;height: 53px;margin: 20px;padding: 5px;">PetCare</a><button
+            data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
+            type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive"
+            style="width: 875px;color: rgb(244,246,248);">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                        th:href="@{/}" style="color: rgb(251,250,244);width: 68px;">home</a></li>
+
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                        th:href="@{/shop}" style="color: rgb(251,250,244);width: 68px;">shop</a></li>
+
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                        th:href="@{/disease}" style="color: rgb(244,243,239);width: 76px;">blogs</a></li>
+                <li class="nav-item" role="presentation" style="
+            width: 88px;
+        "><a class="nav-link active js-scroll-trigger" href="#services"
+                        style="color: rgb(251,250,244);width: 68px;">servies</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                        th:href="@{/contact}" style="color: rgb(249,249,247);width: 98px;">contact</a></li>
+
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                        th:href="@{/cart}" style="color: rgb(247,246,242);width: 67px;">cart</a></li>
+               
+                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                        aria-expanded="false" href="#" style="width: 193px;"><i class="fas fa-user"></i></a>
+                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                            th:href="@{/profile}">profile</a><a class="dropdown-item" role="presentation"
+                            th:href="@{/login}">login</a><a class="dropdown-item" role="presentation"
+                            th:href="@{/logout}">logout</a><a class="dropdown-item" role="presentation"
+                            th:href="@{/register}">sing up</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+ <!--   <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav"
+        style="width: 100%;height: 100px;background-color: rgba(12,13,13,0.99);">
+        <div class="container"><a class="navbar-brand" href="#page-top">PetCare</a><button data-toggle="collapse"
+                data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button"
+                data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="width: 822px;">
+                <ul class="nav navbar-nav ml-auto text-uppercase">
+                    <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                            data-bs-hover-animate="bounce" th:href="@{/}">home</a></li>
+                    <div class="dropdown">
+                        <a   class="nav-item"  data-toggle="dropdown" aria-expanded="false" href="#">
+                            pet </a>
+                        </a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                            th:href="@{/dogpage}">Dog</a><a class="dropdown-item" role="presentation" th:href="@{/cat}">Cat
+                                Item</a><a class="dropdown-item" role="presentation" href="#"> Item</a></div>
+                        
+                    </div>
+                    <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                            data-bs-hover-animate="bounce" th:href="@{/disease}">blogs</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                            data-bs-hover-animate="bounce" th:href="@{/contact}">contact</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                            data-bs-hover-animate="bounce" th:href="@{/cart}">cart</a></li>
+                    <li class="nav-item active">
+                        <span class="nav-link text-alert" th:text="${cartCount}">0</span>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                            aria-expanded="true" href="#" style="width: 300px;"><i class="fas fa-user"></i></a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                data-bs-hover-animate="bounce" href="#">profile</a><a class="dropdown-item"
+                                role="presentation" data-bs-hover-animate="bounce" th:href="@{/login}">login</a><a
+                                class="dropdown-item" role="presentation" data-bs-hover-animate="bounce"
+                                th:href="@{/logout}">logout</a><a class="dropdown-item" role="presentation"
+                                data-bs-hover-animate="bounce" href="#" th:href="@{/register}">sing up</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>-->
+    <!-- <section style=" padding: 0px;">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" higtht="200px">
+            <div class="carousel-inner">
+
+
+
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets\img\david-taffet-5gXPapBz40c-unsplash.jpg" class="d-block w-100" alt="..."
+                        height="650px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="intro-lead-in" ><div class="intro-lead-in"><span>Welcome To Our pet care</span></div>.</h1>
+                            <p class="intro-heading text-uppercase"> <div class="intro-heading text-uppercase"><span>It's Nice To Meet You</span></div></p>
+                          </div>
+                    <div class="intro-text">
+                    
+                </div>
+
+                
+            <div class="carousel-item">
+                <img src="assets\img\LOGIN PET.jpg" class="d-block w-100" alt="..." height="650px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="intro-lead-in" ><div class="intro-lead-in"><span>Welcome To Our pet care</span></div>.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptas magni libero ipsa. Asperiores ducimus necessitatibus alias error aspernatur tempora, minus voluptatibus? Molestiae distinctio maiores, possimus aliquam laborum quis soluta..</p>
+                  </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+
+
+
+        </div>
+
+    </section>-->
+    <section style="background-color:#19214a;">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
+            higtht="200px">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets\img\index 3.jpg" class="d-block w-100" alt="..." height="750px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-uppercase1 section-heading" style="color:rgba(238, 250, 4, 0.927);">Welcome To
+                            Pet Care</h1>
+                        <h2><strong>it's nice to meet you.</strong></h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets\img\index 2.jpg" class="d-block w-100" alt="..." height="750px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-uppercase1 section-heading" style="color:rgba(238, 250, 4, 0.927);">Welcome To
+                            Pet Care</h1>
+                        <h2><strong>it's nice to meet you.</strong></h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\img\index4.jpeg" class="d-block w-100" alt="..." height="750px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-uppercase1 section-heading" style="color:rgba(238, 250, 4, 0.927);">Welcome To
+                            Pet Care</h1>
+                        <h2><strong>it's nice to meet you.</strong></h2>
+                    </div>
+                </div>
+    </section>
+
+
+    <section id="about" style="background-color: #19214a;">
+        <div id="w_shop_105" style="background-color: #19214a;"
+            class="carousel slide w_shop_105_indicators w_shop_105_control_button thumb_scroll_x swipe_x ps_easeOutInCubic"
+            data-ride="carousel" data-pause="hover" data-interval="8000" data-duration="2000">
+            <div class="w_shop_105_main_header">
+                <h1><span><strong>products Starting from</strong></span></h1>
+            </div>
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#w_shop_105" data-slide-to="0" style="filter: blur(0px);"></li>
+                <li data-target="#w_shop_105" data-slide-to="1"></li>
+                <li data-target="#w_shop_105" data-slide-to="2"></li>
+
+            </ol>
+            <div class="carousel-inner" role="listbox" style="background-color: #19214a;">
+                <div class="carousel-item active"><img src="assets/img/pet food index.jpg" alt="w_shop_105_01">
+                    <div class="w_shop_105_left_box"><span data-animation="animated fadeInLeft"
+                            style="font-family: roboto;">₹299.00</span>
+                        <h1 class="left-h" data-animation="animated fadeInLeft">pets foods</h1>
+                        <p data-animation="animated fadeInLeft"> This can include meat, poultry, fish, and eggs.
+                            Protein is essential for building and maintaining muscle, as well as supporting
+                            overall health.
+
+                            Balanced nutrition: A good pet food product should provide a balanced blend of
+                            carbohydrates, fats, proteins, vitamins, and minerals that meet the nutritional
+                            needs of your pet.
+
+                            Grain-free or gluten-free options: Some pets may have allergies or sensitivities to
+                            grains, so grain-free or gluten-free options may be necessary.
+
+                        </p><a href="#" th:href="@{/shop}" data-animation="animated fadeInLeft">Shop now</a>
+                    </div>
+                    <div class="w_shop_105_right_box" data-animation="animated fadeInRight"
+                        style="background-color: #19214a;">
+                        <ul>
+                            <li data-animation="animated fadeInRight">best food</li>
+                            <li data-animation="animated fadeInRight">High-quality protein sources:</li>
+                            <li data-animation="animated fadeInRight">Balanced nutrition:</li>
+                            <li data-animation="animated fadeInRight">Grain-free or gluten-free options</li>
+                            <li data-animation="animated fadeInRight">Natural or organic ingredients</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item"><img src="assets/img/pet toys.jpg" alt="w_shop_105_02">
+                    <div class="w_shop_105_left_box"><span data-animation="animated fadeInLeft"
+                            style="font-family: roboto;">₹499.00</span>
+                        <h1 class="left-h" data-animation="animated fadeInLeft">Pets toys</h1>
+                        <p data-animation="animated fadeInLeft">Different types of toys can be suitable for
+                            different types of play, such as tug-of-war, fetch, or puzzle-solving. Pet owners
+                            may choose toys based on their pet's preferred type of play or to provide them with
+                            a variety of play options.
+
+                            Age and activity level: Pet toys may be designed for specific age ranges or activity
+                            levels to ensure they are appropriate for a pet's needs. For example, a toy designed
+                            for a puppy may .</p><a href="#" th:href="@{/shop}"
+                            data-animation="animated fadeInLeft">Shop now</a>
+                    </div>
+                    <div class="w_shop_105_right_box" data-animation="animated fadeInRight"
+                        style="background-color: #19214a;">
+                        <ul>
+                            <li data-animation="animated fadeInRight">sSize and shape</li>
+                            <li data-animation="animated fadeInRight">Durability</li>
+                            <li data-animation="animated fadeInRight">Safety </li>
+                            <li data-animation="animated fadeInRight">Interactive features</li>
+                            <li data-animation="animated fadeInRight">Washability</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item"><img src="assets/img/pet medicine.jpg" alt="w_shop_105_03">
+                    <div class="w_shop_105_left_box"><span data-animation="animated fadeInLeft"
+                            style="font-family: roboto;">₹599.00</span>
+                        <h1 class="left-h" data-animation="animated fadeInLeft">medician</h1>
+                        <p data-animation="animated fadeInLeft">Lorem ipsum dolor sit amet onsectetuer .</p><a href="#"
+                            th:href="@{/shop}" data-animation="animated fadeInLeft">Shop now</a>
+                    </div>
+                    <div class="w_shop_105_right_box" data-animation="animated fadeInRight">
+                        <ul>
+                            <li data-animation="animated fadeInRight">Dosage strength</li>
+                            <li data-animation="animated fadeInRight">Administration</li>
+                            <li data-animation="animated fadeInRight">Active ingredients</li>
+                            <li data-animation="animated fadeInRight">Storage</li>
+                            <li data-animation="animated fadeInRight">safety </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    </header>
+    <section id="services" style="background-color: #19214a;">
+
+
+        <div class="container">
+
+
+
+             <div class="features-boxed">
+        <div class="container">
+            <div class="card-group">
+                <div class="card">
+                  <img src="assets/img/petservies.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"> Book servies</h5>
+                    <p class="card-text">You can book Dog Grooming and Cat Grooming Services .you love to know your pet is clean or you’re gearing Book a pet Stylist That Will Come to you</p>
+                  </div>
+                  <div class="card-footer">
+                    <button> <a href="#"  th:href="@{/book}"  class="btn btn-primary m-2">book service</a></button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/img/shoplogo.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Buy product</h5>
+                    <p class="card-text">Shop Pet releated product and toys for pet in over pet shop thire are number of product are present to shopping get it now </p>
+                  </div>
+                  <div class="card-footer">
+                  <button>  <a href="#"  th:href="@{/shop}"  class="btn btn-primary m-2">Shop product</a></button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/img/blogs.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"> Blogs</h5>
+                    <p class="card-text"> pets blogs can you Visit The Blog and Write Your blogs and pet releated blogs.</p>
+                  </div>
+                  <div class="card-footer">
+                 <button>   <a href="#" th:href="@{/disease}"   class="btn btn-primary m-2"> blogs</a></button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+        <section class="py-5" id="about">
+            <section>
+                <div class="w_shop_105_main_header">
+                    <h1><span><strong>Over Customers</strong></span></h1>
+                </div>
+                <div class="blog-slider">
+                    <div class="blog-slider__wrp swiper-wrapper">
+                        <div class="blog-slider__item swiper-slide">
+
+                            <div class="blog-slider__img"><img src="assets/imgh.jpeg"></div>
+                            <div class="blog-slider__content"><span class="blog-slider__code">Pune</span>
+                                <div class="blog-slider__title">Harshad Bade</div>
+                                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Recusandae voluptate repellendus magni illo ea animi? </div><a
+                                    class="class=&quot;blog-slider__button" href="#">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                            <div></div>
+                            <div class="blog-slider__img"><img src="assets/img/Tmbare.jpeg"></div>
+                            <div class="blog-slider__content"><span class="blog-slider__code">pune
+                                </span>
+                                <div class="blog-slider__title">Pramod Thombare </div>
+                                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Recusandae voluptate repellendus magni illo ea animi? </div><a
+                                    class="class=&quot;blog-slider__button" href="#">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                            <div></div>
+                            <div class="blog-slider__img"><img src="assets/img/Nhil.jpg"></div>
+                            <div class="blog-slider__content"><span class="blog-slider__code">
+                                    Beed</span>
+                                <div class="blog-slider__title">Nikhil More</div>
+                                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Recusandae voluptate repellendus magni illo ea animi? </div><a
+                                    class="class=&quot;blog-slider__button" href="#">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                            <div></div>
+                            <div class="blog-slider__img"><img src="assets/img/snde.jpg"></div>
+                            <div class="blog-slider__content"><span class="blog-slider__code">
+                                    satara</span>
+                                <div class="blog-slider__title">Dishant Shinde </div>
+                                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Recusandae voluptate repellendus magni illo ea animi? </div><a
+                                    class="class=&quot;blog-slider__button" href="#">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="blog-slider__pagination"></div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+        </section>
+
+        <section id="contact" style="background-image:url('assets/img/map-image.png');">
+            <div class="row">
+                <h1>Contact Us</h1>
+                <div class="col-lg-12">
+                    <form th:action="@{/contact}" method="post" id="contactForm" name="contactForm"
+                        novalidate="novalidate" th:object="${contact}">
+                        <div class="form-row" style="height: 393px;">
+                            <div class="col col-md-6">
+                                <div class="form-group"><input class="form-control" type="text" id="name" name="name"
+                                        placeholder="Your Name *" required><small
+                                        class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                                <div class="form-group"><input class="form-control" type="email" id="email" name="email"
+                                        placeholder="Your Email *" required><small
+                                        class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group"><input class="form-control" type="tel" name="phoneno"
+                                        placeholder="Your Phone *"><small class="form-text text-danger help-block lead"
+                                        required></small></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><textarea class="form-control" id="message" name="message"
+                                        placeholder="Your Message *" required></textarea><small
+                                        class="form-text text-danger help-block lead"></small></div>
+                            </div>
+                            <div class="col">
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase"
+                                    id="sendMessageButton" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2023</span></div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="assets/js/-Filterable-Cards-.js"></script>
+        <script src="assets/js/agency.js"></script>
+        <script src="assets/js/featured-products-slider.js"></script>
+        <script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="assets/js/agency.js"></script>
+
+        <script src="assets/js/jquery.min.js"></script>
+
+        <script src="assets/js/bs-init.js"></script>
+
+</body>
+
+</html>

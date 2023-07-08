@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"th:replace="adminnav::layout(~{::div})">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><br><br><br><br>
+
+    <section>
+        <div>
+            <h1>List</h1> 
+        </div>
+    </section>
+    <div class="container">
+        <h1>List of service</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>service Id</th>
+                    <th>Date</th>
+                    <th>service name</th>
+                    <th>service </th>
+                    <th>Available For Booking?</th>
+                    <th>Workarid</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="car : ${cars}">
+                    <td th:text="${car.id}"></td>
+                    <td th:text="${car.model}"></td>
+                    <td th:text="${car.color}"></td>
+                    <td th:text="${car.seatingCapacity}"></td>
+                    <td th:text="${car.availableForBooking}"></td>
+                    <td th:text="${car.driverId}"></td>
+                    <td>
+                        <a th:href="@{/delete-car(id=${car.id})}" class="btn btn-warning">Delete</a>
+                    </td><!-- Inside the loop for displaying cars -->
+                    <td>
+                        <form action="#" th:action="@{/update-car}" method="post">
+                            <input type="hidden" name="id" th:value="${car.id}">
+                            <button type="submit">change Availability</button>
+                        </form>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        <a href="add-car" class="btn btn-success">Add service</a>
+    </div>
+</body>
+</html>

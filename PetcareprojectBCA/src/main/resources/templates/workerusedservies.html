@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cars Used by Driver</title>
+</head>
+<body>
+    <h2>Cars Used by Driver</h2>
+    <h3>Driver ID: <span th:text="${driverUseCarsDao.driverId}"></span></h3>
+    <h3>Driver Username: <span th:text="${driverUseCarsDao.username}"></span></h3>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Make</th>
+            <th>Model</th>
+        </tr>
+        <tr th:each="car : ${driverUseCarsDao.carList}">
+            <td th:text="${car.id}"></td>
+            <td th:text="${car.make}"></td>
+            <td th:text="${car.model}"></td>
+        </tr>
+    </table>
+    <a th:href="@{/list-drivers}">Back to List of Drivers</a>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav"
+    style="width: 100%;height: 100px;background-color: rgba(12,13,13,0.99);">
+    <div class="container"><a class="navbar-brand" href="#page-top"
+            style="color: rgb(250,249,248);font-family: Montserrat, sans-serif;height: 53px;margin: 20px;padding: 5px;">PetCare</a><button
+            data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
+            type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive"
+            style="width: 875px;color: rgb(244,246,248);">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                        th:href="@{/}" style="color: rgb(251,250,244);width: 68px;">home</a></li>
+
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                        th:href="@{/shop}" style="color: rgb(251,250,244);width: 68px;">shop</a></li>
+
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                        th:href="@{/disease}" style="color: rgb(244,243,239);width: 76px;">blogs</a></li>
+                <li class="nav-item" role="presentation" style="
+            width: 88px;
+        "><a class="nav-link active js-scroll-trigger" href="/"
+                        style="color: rgb(251,250,244);width: 68px;">servies</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                        th:href="@{/contact}" style="color: rgb(249,249,247);width: 98px;">contact</a></li>
+
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger"
+                        th:href="@{/cart}" style="color: rgb(247,246,242);width: 67px;">cart</a></li>
+                <li class="nav-item active">
+                    <span class="nav-link text-alert" th:text="${cartCount}">0</span>
+                </li>
+                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                        aria-expanded="false" href="#" style="width: 193px;"><i class="fas fa-user"></i></a>
+                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                            th:href="@{/profile}">profile</a><a class="dropdown-item" role="presentation"
+                            th:href="@{/login}">login</a><a class="dropdown-item" role="presentation"
+                            th:href="@{/logout}">logout</a><a class="dropdown-item" role="presentation"
+                            th:href="@{/register}">sing up</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> </div><br><br>
+    <br><br><br><br>
+    <div class="featured">
+        <div class="row">
+            <div class="col-md-2" style="display: inline-block;">
+                <div class="featured-menus ftco-animate fadeInUp ftco-animated">
+                    <div class="menu-img img" style="background-image: url(images/index.jpg);"></div>
+                    <div class="text text-center">
+                        <h3><a th:href="@{/dogpage}"> Dog product</a></h3>
+                        <p><span>products</span>,
+                            <span>food</span>,<span>toys</span>,<span>other</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2" style="display: inline-block;">
+                <div class="featured-menus ftco-animate fadeInUp ftco-animated">
+                    <div class="menu-img img" style="background-image: url(images/b2.jpg);"></div>
+                    <div class="text text-center">
+                        <h3><a th:href="@{/cat}"> cat product</a></h3>
+                        <p><span>products</span>,
+                            <span>food</span>,<span>toys</span>,<span>other</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-2" style="display: inline-block;">
+                <div class="featured-menus ftco-animate fadeInUp ftco-animated">
+                    <div class="menu-img img" style="background-image: url(images/b4.jpg);"></div>
+                    <div class="text text-center">
+                        <h3><a th:href="@{/fish}"> Rabbit</a></h3>
+                        <p><span>products</span>,
+                            <span>food</span>,<span>toys</span>,<span>other</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2" style="display: inline-block;">
+                <div class="featured-menus ftco-animate fadeInUp ftco-animated">
+                    <div class="menu-img img" style="background-image: url(images/b4.jpg);"></div>
+                    <div class="text text-center">
+                        <h3><a th:href="@{/Turtle}">  Turtle product</a></h3>
+                        <p><span>products</span>,
+                            <span>food</span>,<span>toys</span>,<span>other</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+  
+        <div class="col-sm-9">
+            <div class="card" style="margin-top: 20px" th:each="product : ${products}">
+                <div class="row no-gutters">
+                    <div class="col-sm-5 d-flex justify-content-center">
+                        <img class="" height="150px" width="150px" th:src="@{${'/productImages/' + product.imageName}}" th:alt="${product.name}">
+                    </div>
+                    <div class="col-sm-7 d-flex justify-content-center">
+                        <div class="card-body">
+                            <h5 class="card-title" th:text="${product.name}"></h5>
+                            <h4>₹ <span th:text="${product.price}"></span></h4>
+                            <p th:text="${product.description}" >Suresh Dasari is a founder and technical lead developer in tutlane.</p>
+                            <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.id})}" class="btn btn-primary">View Product</a>
+                            <a href="#" th:href="@{/addToCart/{id}(id = ${product.id})}"  class="btn btn-primary m-2">Add To Cart</a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+   
+<script src="assets/js/bs-init.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

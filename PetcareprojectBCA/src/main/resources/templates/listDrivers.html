@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"th:replace="adminnav::layout(~{::div})">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <section>
+        <div>
+            <h1>List</h1> 
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>List of worker</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>worker Id</th>
+                    <th>Username</th>
+                    <th>Assigned service</th>
+                    <th>Delete</th>
+                   
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="driver : ${drivers}">
+                    <td th:text="${driver.id}"></td>
+                    <td th:text="${driver.username}"></td>
+                    <td th:text="${driver.assignedCarId}"></td>
+                    <td>
+                        <a th:href="@{/delete-driver(id=${driver.id})}" class="btn btn-warning">Delete</a>
+                    </td>
+                    <td>
+                        <!-- <a th:href="@{/driver/used-cars(driverId=${driver.id})}" class="btn btn-warning">Used servies</a>-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="add-driver" class="btn btn-success">Add worker</a>
+    </div>
+</body>
+</html>

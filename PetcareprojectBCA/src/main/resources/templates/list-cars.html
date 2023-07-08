@@ -1,0 +1,27 @@
+<!-- listCars.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Cars</title>
+</head>
+<body>
+
+   <br><br><br><br><br>
+    <h1>List of Cars</h1>
+    <table>
+        <tr>
+            <th>Car ID</th>
+            <th>Model</th>
+            <th>Seating Capacity</th>
+            <th>Available for Booking</th>
+        </tr>
+        <tr th:each="car : ${cars}">
+            <td th:text="${car.id}"></td>
+            <td th:text="${car.model}"></td>
+            <td th:text="${car.seatingCapacity}"></td>
+            <td th:text="${car.availableForBooking}"></td>
+        </tr>
+    </table>
+</body>
+</html>

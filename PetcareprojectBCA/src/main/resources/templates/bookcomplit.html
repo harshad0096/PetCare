@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div th:replace="/base :: navbar"></div>
+    <br><br><br><br><br><br>
+    <h2>Booking Details:</h2>
+    <p>Booking ID: <span th:text="${booking.id}"></span></p>
+    
+    <p>service ID: <span th:text="${booking.carId}"></span></p>
+    <p>Worker ID: <span th:text="${booking.driverId}"></span></p>
+    <p>Status: <span th:text="${booking.status}"></span></p>
+    <section>
+
+       <center> <h1> Our service provider will contact you for more details</h1></center>
+
+        <p1 style="color: rgb(34, 174, 24)">contact for help</p1><br>
+        <p2>phone no    :9511921465</p2><br>
+        <p2>telephone no:+025-565-255-586</p2><br>
+        <p2>Email        :petcare@gmail.com</p2><br>
+    </section>
+    <h2>Cancel Booking:</h2>
+    <p>Cancel URL: <a th:href="@{'/cancel-car?bookingId=' + ${booking.id}}">Cancel</a></p>
+</body>
+</html>
